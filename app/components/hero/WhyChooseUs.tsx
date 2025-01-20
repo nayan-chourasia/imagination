@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+
 
 const WhyChooseUs = () => {
   const reasons = [
@@ -60,7 +60,7 @@ const WhyChooseUs = () => {
             Why ImaginationPenguin?
           </h2>
           <p className="mt-4 text-lg text-[#2B2B2B]">
-            With a diverse range of services, a team of seasoned professionals, and a client-first approach, we stand out in every industry we serve. Here's why you should choose us:
+            With a diverse range of services, a team of seasoned professionals, and a client-first approach, we stand out in every industry we serve. Here&apos;s why you should choose us:
           </p>
         </div>
 

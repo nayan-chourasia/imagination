@@ -1,8 +1,8 @@
-'use client'
-import React, { useState } from "react";
+'use client';
+import React, { useState } from 'react';
+import Link from 'next/link';
 
 const Navbar = () => {
-  // State for mobile menu toggle
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -11,9 +11,9 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="/" className="text-xl font-bold text-[#2B2B2B]">
-              BrandLogo
-            </a>
+            <Link href="/">
+              <a className="text-xl font-bold text-[#2B2B2B]">BrandLogo</a>
+            </Link>
           </div>
 
           {/* Hamburger Menu for Mobile */}
@@ -59,41 +59,26 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
-            <a
-              href="/"
-              className="text-[#2B2B2B] hover:text-green-600 transition duration-200"
-            >
-              Home
-            </a>
-            <a
-              href="/about-us"
-              className="text-[#2B2B2B] hover:text-green-600 transition duration-200"
-            >
-              About
-            </a>
-            <a
-              href="/service"
-              className="text-[#2B2B2B] hover:text-green-600 transition duration-200"
-            >
-              Services
-            </a>
-            <a
-              href="/contact-us"
-              className="text-[#2B2B2B] hover:text-green-600 transition duration-200"
-            >
-              Contact
-            </a>
-            <a
-              href="/blog"
-              className="text-[#2B2B2B] hover:text-green-600 transition duration-200"
-            >
-              Blog
-            </a>
+            <Link href="/">
+              <a className="text-[#2B2B2B] hover:text-green-600 transition duration-200">Home</a>
+            </Link>
+            <Link href="/about-us">
+              <a className="text-[#2B2B2B] hover:text-green-600 transition duration-200">About</a>
+            </Link>
+            <Link href="/service">
+              <a className="text-[#2B2B2B] hover:text-green-600 transition duration-200">Services</a>
+            </Link>
+            <Link href="/contact-us">
+              <a className="text-[#2B2B2B] hover:text-green-600 transition duration-200">Contact</a>
+            </Link>
+            <Link href="/blog">
+              <a className="text-[#2B2B2B] hover:text-green-600 transition duration-200">Blog</a>
+            </Link>
           </div>
 
           {/* Call-to-Action Button (Desktop Only) */}
           <div className="hidden md:flex">
-          <button className="btn btn-primary bg-[#2B2B2B] border-none text-[#fcf5eb] btn-md rounded-3xl ">
+            <button className="btn btn-primary bg-[#2B2B2B] border-none text-[#fcf5eb] btn-md rounded-3xl ">
               Get Started
             </button>
           </div>
@@ -102,42 +87,26 @@ const Navbar = () => {
         {/* Mobile Menu (Dropdown) */}
         {isOpen && (
           <div className="md:hidden bg-transparent bg-opacity-90 rounded-lg mt-2 p-4 space-y-4">
-            <a
-              href="/"
-              className="block text-[#2B2B2B] hover:text-gray-300 transition duration-200"
-            >
-              Home
-            </a>
-            <a
-              href="about-us"
-              className="block text-[#2B2B2B] hover:text-gray-300 transition duration-200"
-            >
-              About
-            </a>
-            <a
-              href="/service"
-              className="block text-[#2B2B2B] hover:text-gray-300 transition duration-200"
-            >
-              Services
-            </a>
-            <a
-              href="/contact-us"
-              className="block text-[#2B2B2B] hover:text-gray-300 transition duration-200"
-            >
-              Contact
-            </a>
-            <a
-              href="/blog"
-              className="block text-[#2B2B2B] hover:text-gray-300 transition duration-200"
-            >
-              Blog
-            </a>
-            <a
-              href="#get-started"
-              className="block px-4 py-2 bg-[#2B2B2B] hover:bg-green-600 text-white rounded-lg font-semibold shadow-lg transition duration-200"
-            >
-              Get Started
-            </a>
+            <Link href="/">
+              <a className="block text-[#2B2B2B] hover:text-gray-300 transition duration-200">Home</a>
+            </Link>
+            <Link href="/about-us">
+              <a className="block text-[#2B2B2B] hover:text-gray-300 transition duration-200">About</a>
+            </Link>
+            <Link href="/service">
+              <a className="block text-[#2B2B2B] hover:text-gray-300 transition duration-200">Services</a>
+            </Link>
+            <Link href="/contact-us">
+              <a className="block text-[#2B2B2B] hover:text-gray-300 transition duration-200">Contact</a>
+            </Link>
+            <Link href="/blog">
+              <a className="block text-[#2B2B2B] hover:text-gray-300 transition duration-200">Blog</a>
+            </Link>
+            <Link href="#get-started">
+              <a className="block px-4 py-2 bg-[#2B2B2B] hover:bg-green-600 text-white rounded-lg font-semibold shadow-lg transition duration-200">
+                Get Started
+              </a>
+            </Link>
           </div>
         )}
       </div>

@@ -51,7 +51,7 @@ const AboutPage = () => {
             <div className="flex flex-col items-center p-6 bg-yellow-200 bg-opacity-60 rounded-full shadow-xl shadow-yellow-800">
               <h4 className="text-2xl text-yellow-500 font-semibold mb-4">Innovation</h4>
               <p className="text-center text-yellow-500">
-                We prioritize creative solutions that push the boundaries of what's possible, enabling us to meet the evolving needs of our clients.
+                We prioritize creative solutions that push the boundaries of what&apos;s possible, enabling us to meet the evolving needs of our clients.
               </p>
             </div>
             <div className="flex flex-col items-center p-6 bg-[#C4DFE6] bg-opacity-60 rounded-full shadow-xl shadow-green-800">

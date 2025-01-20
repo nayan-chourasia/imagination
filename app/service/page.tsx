@@ -178,7 +178,7 @@ const ServicePage = () => {
           Why Choose ImaginationPenguin?
         </h3>
         <p className="text-lg md:text-xl text-[#2B2B2B] mb-12 max-w-3xl mx-auto">
-          Our commitment to excellence, customer satisfaction, and customized solutions sets us apart. Here's why businesses trust us:
+          Our commitment to excellence, customer satisfaction, and customized solutions sets us apart. Here&apos;s why businesses trust us:
         </p>
         <div className="space-y-6">
           {reasons.map((reason, index) => (

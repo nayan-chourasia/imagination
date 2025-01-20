@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const TestimonialSection = () => {
   const testimonials = [
@@ -39,8 +40,10 @@ const TestimonialSection = () => {
   ];
 
   return (
-    <section className="py-12 bg-body bg-cover"
-    style={{ backgroundImage: "url('/home/testimonial.png')" }}>
+    <section
+      className="py-12 bg-body bg-cover"
+      style={{ backgroundImage: "url('/home/testimonial.png')" }}
+    >
       <div className="container mx-auto px-6 md:px-12 lg:px-20">
         {/* Section Heading */}
         <div className="text-center mb-12">
@@ -53,8 +56,7 @@ const TestimonialSection = () => {
         </div>
 
         {/* Testimonial Cards */}
-        <div
-         className="relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
@@ -66,10 +68,12 @@ const TestimonialSection = () => {
             >
               {/* Image */}
               <div className="w-16 h-16 rounded-full overflow-hidden mx-auto mb-4 border-4 border-white shadow-sm">
-                <img
+                <Image
                   src={testimonial.image}
                   alt={testimonial.name}
-                  className="w-full h-full object-cover"
+                  width={64} // Adjust dimensions as needed
+                  height={64}
+                  className="rounded-full"
                 />
               </div>
 

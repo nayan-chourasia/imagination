@@ -15,7 +15,7 @@ const HeroSection = () => {
             reality.
           </p>
           <p className="text-[#2B2B2B] text-md md:text-lg mt-4 lg:leading-8">
-          "ImaginationPenguin is a dynamic and innovative parent company, leading multiple successful ventures across various industries. We specialize in delivering premium services through our diverse subsidiaries, which cater to freelancing projects, event planning, stock advisory, and expert consultancy."
+          ImaginationPenguin is a dynamic and innovative parent company, leading multiple successful ventures across various industries. We specialize in delivering premium services through our diverse subsidiaries, which cater to freelancing projects, event planning, stock advisory, and expert consultancy.
           </p>
           <div className="flex gap-4 py-6">
             <button className="btn btn-primary bg-[#2B2B2B] border-none text-[#fcf5eb] btn-md rounded-3xl ">
